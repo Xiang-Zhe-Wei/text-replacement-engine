@@ -32,6 +32,22 @@ pip install python-docx
 
 ## 使用方式
 
+### 圖形介面（GUI）
+
+適合沒有終端機的 Windows / Mac 一般用戶：
+
+```bash
+python gui.py
+```
+
+功能：
+- 點選按鈕選擇 `.docx` 檔案
+- 選擇替換模式：**批次**（套用 replacements.md 所有規則）或**單一**（手動輸入）
+- 自訂輸出檔案名稱（留空則自動命名 `原檔名_modified.docx`）
+- 執行後顯示每條規則的替換次數統計
+
+---
+
 ### 批次模式（套用 replacements.md 所有規則）
 
 ```bash
@@ -89,6 +105,7 @@ Output saved to: report_modified.docx
 
 ```
 docx-text-replacer/
+├── gui.py                  # 圖形介面入口
 ├── main.py                 # CLI 入口
 ├── replacements.md         # 口語用字與修正用字對照表（可自行擴充）
 ├── replacer/
