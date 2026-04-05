@@ -1,1 +1,1 @@
-from .docx_replacer import replace_in_docx
+from .docx_replacer import replace_in_docx, replace_multiple_in_docx
