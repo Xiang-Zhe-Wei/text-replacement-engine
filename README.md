@@ -25,7 +25,8 @@
 ## 安裝依賴
 
 ```bash
-pip install python-docx
+python -m pip install python-docx
+python -m pip install customtkinter
 ```
 
 ---
@@ -122,7 +123,7 @@ docx-text-replacer/
 ## 執行測試
 
 ```bash
-pip install pytest python-docx
+python -m pip install pytest python-docx
 python -m pytest tests/ -v
 ```
 
